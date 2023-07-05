@@ -4,7 +4,7 @@ import HeaderContent from "./Components/HeaderContent/HeaderContent";
 
 export default function Header() {
   return (
-    <header>
+    <header className="welcome">
       <NavBar />
       <div className="section-container">
         <HeaderContent />

@@ -16,16 +16,20 @@
   --step-7: clamp(2.24rem, calc(1.46rem + 3.88vw), 4.47rem);
 
   --primary-color: #2d9cda;
-  --background-color: #333;
+  --background-color: #232323;
   --nav-background-color: #29335c;
   --input-background: hsla(0, 0%, 100%, 0.204);
 
   --border: 0.2rem solid var(--primary-color);
 }
-
 body {
   background-color: var(--background-color);
   color: white;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -74,6 +78,18 @@ img {
 button {
   display: block;
   margin: auto;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .mobile-logo {
@@ -422,7 +438,7 @@ footer > hr {
 @media (min-width: 768px) {
   .nav-container {
     margin: auto;
-    margin-block: 2rem;
+    padding-block: 2rem;
   }
   nav {
     position: unset;
