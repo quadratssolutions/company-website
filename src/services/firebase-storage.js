@@ -5,6 +5,8 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 
+import { v4 as uuidv4 } from "uuid";
+
 const storage = getStorage();
 
 async function uploadResume({
@@ -15,7 +17,10 @@ async function uploadResume({
   onUploaded,
 }) {
   if (isPDF(resume)) {
-    const storageRef = ref(storage, "resume/" + username + "/" + resume.name);
+    const storageRef = ref(
+      storage,
+      "resume/" + username + "/" + changeFileName(resume).name
+    );
     const uploadTask = uploadBytesResumable(storageRef, resume);
     uploadTask.on(
       "state_changed",
@@ -63,6 +68,20 @@ async function uploadResume({
 
 function isPDF(file) {
   return file.type === "application/pdf";
+}
+
+function changeFileName(file) {
+  const fileExtension = getFileExtension(file.name);
+  const newFileName = uuidv4();
+  const modifiedFile = new File([file], newFileName + fileExtension, {
+    type: file.type,
+    lastModified: file.lastModified,
+  });
+  return modifiedFile;
+}
+
+function getFileExtension(filename) {
+  return filename.slice(filename.lastIndexOf("."));
 }
 
 export { uploadResume };
