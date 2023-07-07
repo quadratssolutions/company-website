@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import DropZone from "../DropZone/DropZone";
 import TextInput from "../TextInput/TextInput";
@@ -14,6 +14,24 @@ export default function Form() {
   const [agreed, setAgreed] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadingProgress, setUploadingProgress] = useState(0);
+  const [isError, setIsError] = useState(null);
+  const [isSucceed, setIsSucceed] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (isError) {
+        setIsError(null);
+      }
+    }, 3000);
+  }, [isError]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (isSucceed) {
+        setIsSucceed(null);
+      }
+    }, 3000);
+  }, [isSucceed]);
 
   function fileData() {
     if (resume) {
@@ -34,8 +52,8 @@ export default function Form() {
         username: email.split("@")[0],
         onUploading: (progress) => setUploadingProgress(progress),
         onError: (error) => {
+          setIsError(error);
           setIsUploading(false);
-          console.log(error);
         },
         onUploaded: async (url) => {
           const res = await addResume({
@@ -49,13 +67,14 @@ export default function Form() {
             setEmail("");
             setAgreed(false);
             setResume(null);
+            setIsSucceed("Your Resume was successfully uploaded");
           } else {
-            window.alert("Failed to upload resume!");
+            setIsError("Failed to upload resume!");
           }
         },
       });
     } else {
-      window.alert("Some fields are empty!");
+      setIsError("Some fields are empty!");
     }
   }
   return (
@@ -109,6 +128,8 @@ export default function Form() {
           <input type="submit" value="Submit your Resume" className="btn" />
         )}
       </div>
+      {isError ? <div className="message error">{isError}</div> : <></>}
+      {isSucceed ? <div className="message succeed">{isSucceed}</div> : <></>}
     </form>
   );
 }

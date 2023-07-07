@@ -391,6 +391,22 @@ input:-webkit-autofill:active {
   align-self: center;
 }
 
+.message {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  font-size: var(--step-1);
+}
+
+.error {
+  background-color: red;
+}
+
+.succeed {
+  background-color: green;
+}
+
 .top-container {
   margin-block: 2rem;
   margin-inline: 2rem;

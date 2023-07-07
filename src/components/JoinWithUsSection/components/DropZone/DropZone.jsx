@@ -3,7 +3,9 @@ import add_file from "../../../../assets/add-file.svg";
 import { useDropzone } from "react-dropzone";
 
 export default function DropZone({ onSelected, fileData }) {
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
+  const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
+    accept: "application/pdf",
+  });
 
   useEffect(() => {
     if (acceptedFiles.length > 0) {
