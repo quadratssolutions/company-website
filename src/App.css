@@ -97,6 +97,10 @@ header {
   margin: 2rem;
 }
 
+.no-decorations {
+  text-decoration: none;
+}
+
 .desktop-logo {
   display: none;
   width: var(--step-7);
@@ -134,7 +138,7 @@ nav {
   height: 100%;
   width: 100%;
   background-color: var(--nav-background-color);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 nav > a {

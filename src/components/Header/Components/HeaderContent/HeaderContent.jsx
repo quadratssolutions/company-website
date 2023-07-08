@@ -2,6 +2,7 @@ import React from "react";
 
 import name from "../../../../assets/name.png";
 import Button from "../../../global/Button/Button";
+import { Link } from "react-router-dom";
 
 function HeaderContent() {
   return (
@@ -11,7 +12,14 @@ function HeaderContent() {
         Transforming <span className="highlight">Ideas</span> into Digital{" "}
         <span className="highlight">Excellence</span>
       </h1>
-      <Button text={"Lets Talk"} />
+
+      <Link
+        to="https://calendly.com/kasundularaam/30min"
+        className="no-decorations"
+      >
+        <Button text={"Schedule a meeting"} />
+      </Link>
+
       <h2>What is our company</h2>
       <p>
         Quadrats Solutions is a tech startup that develops web sites and mobile
