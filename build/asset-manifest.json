@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cefdcd97.css",
+    "main.js": "/static/js/main.6fe5ff46.js",
+    "static/media/background.png": "/static/media/background.92a16528cd2c399a1bfa.png",
+    "static/media/nipun.png": "/static/media/nipun.6417aa3c0009aa201e13.png",
+    "static/media/malaka.png": "/static/media/malaka.09fa24d727f21eb0e29e.png",
+    "static/media/kasun.jpg": "/static/media/kasun.1a20c2d2c44ee4a4666d.jpg",
+    "static/media/rajith.jpeg": "/static/media/rajith.8ae7e974552775f6c101.jpeg",
+    "static/media/robot.png": "/static/media/robot.cf0e91e4acb10d964d19.png",
+    "static/media/ashen.png": "/static/media/ashen.ecebe71b1d35b33d9581.png",
+    "static/media/radioactive.png": "/static/media/radioactive.40a16875e87936d3057a.png",
+    "static/media/hasaranga.jpeg": "/static/media/hasaranga.7ff7eda780f4dc61bb94.jpeg",
+    "static/media/meeting.png": "/static/media/meeting.719c2e78b76ebd480fbf.png",
+    "static/media/hand-shake.png": "/static/media/hand-shake.314f1b624575dd828f23.png",
+    "static/media/name.png": "/static/media/name.be1b6fa3521564687662.png",
+    "index.html": "/index.html",
+    "static/media/add-file.svg": "/static/media/add-file.937666af3a96ef06c88735f6e2f2b975.svg",
+    "main.cefdcd97.css.map": "/static/css/main.cefdcd97.css.map",
+    "main.6fe5ff46.js.map": "/static/js/main.6fe5ff46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cefdcd97.css",
+    "static/js/main.6fe5ff46.js"
+  ]
+}
