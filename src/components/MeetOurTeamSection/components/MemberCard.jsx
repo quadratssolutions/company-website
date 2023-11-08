@@ -15,13 +15,13 @@ export default function MemberCard(props) {
         <h3>{position}</h3>
         <small>{description}</small>
         <div>
-          <a href={facebook}>
+          <a href={facebook} target="blank">
             <img src={facebookLogo} alt="" className="icon" />
           </a>
-          <a href={github}>
+          <a href={github} target="blank">
             <img src={githubLogo} alt="" className="icon" />
           </a>
-          <a href={linkedin}>
+          <a href={linkedin} target="blank">
             <img src={linkedinLogo} alt="" className="icon" />
           </a>
         </div>

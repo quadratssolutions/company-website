@@ -12,12 +12,12 @@ export default function Footer() {
       <div className="top-container">
         <div className="menu">
           <h3>Location</h3>
-          <p>Kaluthara</p>
+          <p>Kalutara</p>
         </div>
         <div className="menu">
           <h3>Telephone</h3>
-          <p>+975485441541</p>
-          <p>+975485441541</p>
+          <p>+94 77 703 5704</p>
+          <p>+94 77 385 1530</p>
         </div>
         <div className="menu">
           <h3>Quick Links</h3>
@@ -26,12 +26,17 @@ export default function Footer() {
         </div>
         <div className="menu">
           <h3>Email</h3>
-          <p>company@gmail.com</p>
+          <p>info@quadratssolutions.com</p>
         </div>
         <div id="mobile-social" className="menu">
           <h3>Join Our Social Community</h3>
           <div>
-            <img src={facebook} alt="" className="icon" />
+            <a
+              href="https://www.facebook.com/quadratssolutions/"
+              target="blank"
+            >
+              <img src={facebook} alt="" className="icon" />
+            </a>
             <img src={github} alt="" className="icon" />
             <img src={linkedin} alt="" className="icon" />
           </div>
@@ -41,7 +46,9 @@ export default function Footer() {
       <div className="bottom-container">
         <small>Copyright © 2023, QUADRATS.inc</small>
         <div id="desktop-social">
-          <img src={facebook} alt="" className="icon" />
+          <a href="https://www.facebook.com/quadratssolutions/" target="blank">
+            <img src={facebook} alt="" className="icon" />
+          </a>
           <img src={github} alt="" className="icon" />
           <img src={linkedin} alt="" className="icon" />
         </div>

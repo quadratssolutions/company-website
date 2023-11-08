@@ -147,10 +147,6 @@ nav > a {
   font-size: var(--step-2);
 }
 
-.responsive-nav {
-  transform: translateY(100vh);
-}
-
 .close {
   position: absolute;
   top: 0;
@@ -455,7 +451,15 @@ footer > hr {
   margin-inline: 2rem;
 }
 
+.responsive-nav {
+  transform: translateY(100vh);
+}
+
 @media (min-width: 768px) {
+  .responsive-nav {
+    transform: translateY(0vh);
+  }
+
   .nav-container {
     margin: auto;
     padding-block: 2rem;
