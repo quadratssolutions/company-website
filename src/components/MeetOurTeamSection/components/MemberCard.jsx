@@ -14,7 +14,7 @@ export default function MemberCard(props) {
         <h2 className="">{name}</h2>
         <h3>{position}</h3>
         <small>{description}</small>
-        <div>
+        {/* <div>
           <a href={facebook} target="blank">
             <img src={facebookLogo} alt="" className="icon" />
           </a>
@@ -24,7 +24,7 @@ export default function MemberCard(props) {
           <a href={linkedin} target="blank">
             <img src={linkedinLogo} alt="" className="icon" />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
