@@ -36,7 +36,7 @@ function MeetOurTeamSection() {
       name: "Ravindu Wijekoon",
       position: "Co-Founder & Head of Research and Development",
       description:
-        "Ravindu Navanjana, the Co-founder of Quadrats, is a driving force behind our success. His relentless commitment to excellence and his ability to turn ideas into reality make him a crucial part of our team. Malaka combines a strong technical background with a creative mindset to drive our projects forward.",
+        "Ravindu Navanjana, the Co-founder of Quadrats, is a driving force behind our success. His relentless commitment to excellence and his ability to turn ideas into reality make him a crucial part of our team. Ravindu combines a strong technical background with a creative mindset to drive our projects forward",
       facebook: "https://www.facebook.com/ravindu.nawa3",
       github: "https://github.com",
       linkedin: "https://linkedin.com",

@@ -6,19 +6,19 @@ export default function StatsSection() {
       <div className="section-container stats-container">
         <div className="stat-card">
           <div className="inner-box">
-            <h1>100+</h1>
+            <h1>25+</h1>
             <p>Completed projects</p>
           </div>
         </div>
         <div className="stat-card">
           <div className="inner-box">
-            <h1>80+</h1>
+            <h1>20+</h1>
             <p>Satisfied Clients</p>
           </div>
         </div>
         <div className="stat-card">
           <div className="inner-box">
-            <h1>5000+</h1>
+            <h1>500+</h1>
             <p>User Comments</p>
           </div>
         </div>
